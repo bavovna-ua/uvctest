@@ -9,8 +9,9 @@ android {
 
     defaultConfig {
         applicationId = "com.bavovna.uvctest"
-        minSdk = 29
-        targetSdk = 33
+        minSdk = 27
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk = 27
         versionCode = 1
         versionName = "1.0"
 
