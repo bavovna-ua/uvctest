@@ -10,7 +10,9 @@ import com.jiangdg.ausbc.base.CameraFragment
 import com.jiangdg.ausbc.callback.ICameraStateCallBack
 import com.jiangdg.ausbc.camera.bean.CameraRequest
 import com.jiangdg.ausbc.render.env.RotateType
+import com.jiangdg.ausbc.widget.AspectRatioGLSurfaceView
 import com.jiangdg.ausbc.widget.AspectRatioSurfaceView
+import com.jiangdg.ausbc.widget.AspectRatioTextureView
 import com.jiangdg.ausbc.widget.IAspectRatio
 
 /**
@@ -25,6 +27,8 @@ class CameraFragment : CameraFragment() {
     private val binding get() = _binding!!
     override fun getCameraView(): IAspectRatio? {
         return AspectRatioSurfaceView(requireContext())
+//        return AspectRatioTextureView(requireContext())
+//        return AspectRatioGLSurfaceView(requireContext())
     }
 
     override fun getCameraViewContainer(): ViewGroup? {
